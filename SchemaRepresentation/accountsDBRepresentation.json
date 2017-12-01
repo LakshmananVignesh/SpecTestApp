@@ -1,0 +1,66 @@
+{
+    "representationType": "application/json",
+    "representationMapping": {
+        "basicString": "VARCHAR",
+        "descriptionString": "VARCHAR",
+        "long": "BIGINT",
+        "id": "BIGINT",
+        "object": "TABLE",
+        "list": "VALUES",
+        "integer": "SMALLINT",
+        "float": "DOUBLE",
+        "boolean": "BOOLEAN"
+    },
+    "mappings": [
+        {
+            "name": "CRMACCOUNT.ACCOUNTID",
+            "modelVariable": "accountId",
+            "type":"bigInt"
+        },
+        {
+            "name": "CRMACCOUNT.ACCOUNTNAME",
+            "modelVariable": "accountName",
+            "type":"varChar"
+        },
+        {
+            "name": "CRMACCOUNT.INDUSTRY",
+            "modelVariable": "industry",
+            "type":"varChar"
+        },
+        {
+            "name": "CRMACCOUNT.PHONE",
+            "modelVariable": "phone",
+            "type":"varChar"
+        },
+        {
+        	"name":"CRMACCOUNT.WEBSITE",
+        	"modelVariable":"website",
+        	"type":"varChar"
+        },
+        {
+            "name": "CRMACCOUNT.OWNERID",
+            "modelVariable": "ownerId",
+            "type":"bigInt"
+        },
+        {
+            "name": "CRMACCOUNT.EMAIL",
+            "modelVariable": "email",
+            "type":"varChar"
+        },
+        {
+            "name": "CRMACCOUNT.CREATEDTIME",
+            "modelVariable": "createdTime",
+            "type":"bigInt"
+        },
+        {
+            "name": "CRMACCOUNT.MODIFIEDTIME",
+            "modelVariable": "modifiedTime",
+            "type":"bigInt"
+        },
+        {
+            "name": "CRMACCOUNT.CREATEDBY",
+            "modelVariable": "createdBy",
+            "type":"bigInt"
+        }
+    ]
+}

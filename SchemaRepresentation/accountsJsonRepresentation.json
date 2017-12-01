@@ -1,0 +1,66 @@
+{
+    "representationType": "application/json",
+    "representationMapping": {
+        "basicString": "string",
+        "descriptionString": "string",
+        "long": "string",
+        "id": "string",
+        "object": "object",
+        "list": "array",
+        "integer": "integer",
+        "float": "string",
+        "boolean": "boolean"
+    },
+    "mappings": [
+        {
+            "name": "id",
+            "modelVariable": "accountId",
+            "type":"string"
+        },
+        {
+            "name": "accountName",
+            "modelVariable": "accountName",
+            "type":"string"
+        },
+        {
+            "name": "industry",
+            "modelVariable": "industry",
+            "type":"string"
+        },
+        {
+            "name": "phone",
+            "modelVariable": "phone",
+            "type":"string"
+        },
+        {
+        	"name":"website",
+        	"modelVariable":"website",
+        	"type":"string"
+        },
+        {
+            "name": "ownerId",
+            "modelVariable": "ownerId",
+            "type":"string"
+        },
+        {
+            "name": "email",
+            "modelVariable": "email",
+            "type":"string"
+        },
+        {
+            "name": "createdTime",
+            "modelVariable": "createdTime",
+            "type":"isoDatePattern"
+        },
+        {
+            "name": "modifiedTime",
+            "modelVariable": "modifiedTime",
+            "type":"isoDatePattern"
+        },
+        {
+            "name": "createdBy",
+            "modelVariable": "createdBy",
+            "type":"string"
+        }
+    ]
+}

@@ -1,0 +1,95 @@
+{
+    "namespace": "com.zoho.support.core.accounts",
+    "name": "Account",
+    "namedValues": [
+        {
+            "name": "accountId",
+            "type": {
+                "name": "Id",
+                "relation": false,
+                "selfDescriptive": true,
+                "relationalObject": null,
+                "nullable": false
+            },
+            "isMandatory": true
+        },
+        {
+            "name": "accountName",
+            "type": {
+                "name": "basicString",
+                "regex": null,
+                "length": 100
+            },
+            "isMandatory": true
+        },
+        {
+            "name": "email",
+            "type": {
+                "name": "email",
+                "length":30
+            },
+            "isMandatory": false
+        },
+        {
+            "name": "website",
+            "type": {
+                "name": "url",
+                "length": 350
+            },
+            "isMandatory": false
+        },
+        {
+            "name": "industry",
+            "type": {
+                "name": "basicString",
+                "regex": null,
+                "length": 200
+            },
+            "isMandatory": false
+        },
+        {
+            "name": "phone",
+            "type": {
+                "name": "phone",
+                "length": "75"
+            },
+            "isMandatory": false
+        },
+        {
+            "name": "createdTime",
+            "type": {
+                "name": "timeStamp"
+            },
+            "isMandatory": false
+        },
+        {
+            "name": "modifiedTime",
+            "type": {
+                "name": "timeStamp"
+            },
+            "isMandatory": false
+        },
+        {
+            "name": "createdBy",
+            "type": {
+                "name": "Id",
+                "relation": true,
+                "selfDescriptive": false,
+                "relationalObject": "com.zoho.support.core.supportRep.SupportRep",
+                "nullable": false
+            },
+            "isMandatory": true
+        },
+        {
+            "name": "ownerId",
+            "type": {
+                "name": "Id",
+                "relation": true,
+                "selfDescriptive": false,
+                "relationalObject": "com.zoho.support.core.supportRep.SupportRep",
+                "nullable": false
+            },
+            "isMandatory": true
+        }
+    ]
+}
